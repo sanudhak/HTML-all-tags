@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREE</title>
+    <style>
+        body{
+            font-size: 100%;
+        }
+
+        .content{
+            font-size: 90%;
+            line-height: 1.5em;
+        }
+
+        li.content::before{
+            position: absolute;
+            height: 0.5em;
+        }
+        
+        ul{
+            list-style: none;
+            line-height: 2em;
+        }
+
+        ul summary{
+            cursor: pointer;
+        }
+
+        ul summary::marker{
+            display: none;
+        }
+
+        ul summary::-webkit-details-marker{
+            display: none;
+        }
+
+        ul li{
+            position: relative;
+            
+        }
+
+        ul li::before{
+            position: absolute;
+            left: -10px;
+            top: 0px;
+            border-left: 2px solid grey;
+            border-bottom: 2px solid grey;
+            content: "";
+            width: 8px;
+            height: 1em;   
+        }
+
+        ul li::after{
+            position: absolute;
+            left: -10px;
+            bottom: 0px;
+            border-left: 2px solid grey;
+            content: "";
+            width: 8px;
+            height: 100%;
+        }
+
+        ul li:last-child::after{
+            display: none;
+        }
+
+        ul.tree > li:after, ul.tree > li:after{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+    <details open>
+        <summary>What are Marketed?</summary>
+        <ul>
+            <li>
+                <details>
+                    <summary>GOODS</summary>
+                        <ul>
+                            <li class="content">Physical goods constitute the bulk of most countries' production and marketing efforts.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>SERVICES</summary>
+                        <ul>
+                            <li class="content">Services include the work of airlines, hotels, car rentals firms, barbers, beauticians, maintenance and repair people, and accountants, bankers,lawyers, engineers, doctors, software programmers, and management consultants.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>EVENT</summary>
+                        <ul>
+                            <li class="content">Marketers promote time-based events, such as major trade shows, artistic performances, and company anniversaries. Global sporting events such as Olympics and the World Cup are promoted aggressively to companies and fans. Local events include craft fairs, bookstore readings, and farmer's markets.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>EXPERIENCES</summary>
+                        <ul>
+                            <li class="content">By orchestrating several services and goods, a firm can create, stage, and market experiences.<br>Walt Disney World's Magic Kingdom lets customers visit a fairy kingdom, a pirate ship, or a haunted house.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>PERSONS (man power)</summary>
+                        <ul>
+                            <li class="content">Artists, musicians, CEOs, physicians, high-profile lawyers and financiers, and other professionals often get help from marketers. Many athletes and entainers have done a masterful job of marketing themselves.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>PLACES</summary>
+                        <ul>
+                            <li class="content">Cities, states, regions, and whole nations compete to attract tourists, residents, factories, and company headquarters. </li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>PROPERTIES</summary>
+                        <ul>
+                            <li class="content">Properties are intangible rights to ownership to either real property (real estate) or financial property (stocks and bonds).<br>They are bought and sold, and these exchanges require marketing.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>ORGANIZATIONS</summary>
+                        <ul>
+                            <li class="content">Museums, performing arts organizations, corporations, and nonprofits all use marketing to boost their public images and compete for audiences and funds.</li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>INFORMATION</summary>
+                        <ul>
+                            <li class="content">Information is essentially what books, schools, and universities produce, market, and distribute at a price of parents, students, and communities.<bt>Firms make business decisions using information supplied by organizations.</bt></li>
+                        </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>IDEAS</summary>
+                        <ul>
+                            <li class="content">Every market offering includes a basic idea. Charles Revson of Revlon once observed: "In the factory we make cosmetics; in the drugstore we sell hope."</li>
+                        </ul>
+                </details>
+            </li>
+        </ul>
+    </details>
+    </div>
+</body>
+</html>
